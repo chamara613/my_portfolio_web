@@ -1,15 +1,15 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
-  {
-    title: "Fintech Dashboard",
-    description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
-  },
+  // {
+  //   title: "Fintech Dashboard",
+  //   description:
+  //     "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+  //   image: "/projects/project1.png",
+  //   tags: ["React", "Typescript", "NodeJS"],
+  //   link: "#",
+  //   github: "#",
+  // },
   {
     title: "BPC Computer E-Commerce Website",
     description:
@@ -20,7 +20,7 @@ const projects = [
     github: "https://github.com/chamara613?tab=repositories",
   },
   {
-    title: "Sri Lanka Escapes — Travel & Tourism Platform",
+    title: "Sri Lanka Escapes - Travel & Tourism Platform",
     description:
       "A responsive travel and tourism web application designed to promote Sri Lanka’s travel destinations and tourism experiences. Built with a modern user interface, the platform enhances user engagement through smooth navigation, interactive design, and optimized performance.",
     image: "/projects/project3.png",

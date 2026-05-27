@@ -31,6 +31,22 @@ const skills = [
 ];
 
 export const Hero = () => {
+  const downloadCV = () => {
+    fetch("/Chamara_CV.pdf")
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "Chamara_CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(link);
+      })
+      .catch((error) => console.error("Error downloading CV:", error));
+  };
+
   return (
     <section id="Hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
@@ -75,7 +91,7 @@ export const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Turning ideas <span className="text-primary glow-text">into</span>
                 <br />
                 modern web experiences.
@@ -97,7 +113,7 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton onClick={downloadCV}>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>

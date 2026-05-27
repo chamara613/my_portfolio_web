@@ -1,6 +1,6 @@
 const experiences = [
   {
-    period: "2026 — Future Goals",
+    period: "2026 - Future Goals",
     role: "Aspiring MERN Stack Developer",
     company: "",
     description:
@@ -9,7 +9,7 @@ const experiences = [
     current: true,
   },
   {
-    period: "2025 — Present",
+    period: "2025 - Present",
     role: "MERN Stack Development Journey",
     company: "",
     description:
@@ -27,7 +27,7 @@ const experiences = [
     current: false,
   },
   {
-    period: "2019-2021",
+    period: "2019 - 2021",
     role: "Advanced Level (A/L) Student",
     company: "",
     description:
